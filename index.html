@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Path Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="buttonsdiv">
+        <button id="visualizeButton" class="button">Visualise</button>
+        <button id="clearButton" class="button">Clear</button>
+      </div>
+      <div id="title"><u>Path-Finding Visualizer</u></div>
+      <div id="header-right">
+        <div>
+          <select id="algorithm_type" name="sort_type">
+            <option value="dijkstra" selected>Dijkstra's Algorithm</option>
+            <option value="bfs">BFS(Breadth first search)</option>
+            <option value="dfs">DFS(Depth first search)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="indicator-container">
+      <div class="indicator">
+        <div class="indicator-block" id="start-indicator"></div>
+        <div style="color: aliceblue">Start Node</div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="end-indicator"></div>
+        <div style="color: aliceblue">End Node</div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="visited-indicator"></div>
+        <div style="color: aliceblue">Visited Node</div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="wall-indicator"></div>
+        <div style="color: aliceblue">Barrier</div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="path-indicator"></div>
+        <div style="color: aliceblue">Path</div>
+      </div>
+    </div>
+    <div id="container"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
